@@ -243,6 +243,11 @@ img
 }
 @media (max-width: 600px)
 {
+    .noise
+    {
+        height: 100%;
+        width: 100%;
+    }
     .title
     {
         top: 40%;
