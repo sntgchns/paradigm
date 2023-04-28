@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Bruno Ace SC', cursive;
 }
 body
 {
@@ -13,8 +14,9 @@ body
     min-height: 100vh;
     background: #f4f4f4;
     backdrop-filter: drop-shadow(2px 4px 6px black);
-    font-family: 'Bruno Ace SC', cursive;
     overflow: hidden;
+    position: relative;
+    width: 100%;
 }
 #particles-js
 {
