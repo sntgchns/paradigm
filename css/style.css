@@ -15,8 +15,6 @@ body
     background: #f4f4f4;
     backdrop-filter: drop-shadow(2px 4px 6px black);
     overflow: hidden;
-    position: relative;
-    width: 100%;
 }
 #particles-js
 {
