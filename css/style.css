@@ -112,6 +112,8 @@ img
     top: -400px;
     height: -webkit-fill-available;
     object-fit: cover;
+    transform: translateZ(200px);
+    transition: all 6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .blured
 {
