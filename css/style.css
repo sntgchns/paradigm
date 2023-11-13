@@ -243,6 +243,10 @@ img
 }
 @media (max-width: 600px)
 {
+    img
+    {
+        top: -40px;
+    }
     .noise
     {
         height: 100%;
