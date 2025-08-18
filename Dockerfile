@@ -1,6 +1,9 @@
 # Usa una imagen base de Nginx ligera
 FROM nginx:alpine
 
+# Copia el archivo de configuración de Nginx
+COPY default.conf /etc/nginx/conf.d/default.conf
+
 # Copia los archivos de tu sitio web al directorio de Nginx
 COPY . /usr/share/nginx/html
 
