@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: paradigm-deployment
+  labels:
+    apply: "true"
+    app: paradigm
+spec:
+  replicas: 1
+  revisionHistoryLimit: 2
+  selector:
+    matchLabels:
+      app: paradigm
+  template:
+    metadata:
+      labels:
+        app: paradigm
+    spec:
+      containers:
+      - name: paradigm
+        image: sntgchns/paradigm:k8s
+        imagePullPolicy: Never
+        resources:
+          requests:
+            memory: 64Mi
+            cpu: "0.25"
+          limits:
+            memory: 128Mi
+            cpu: "0.5"
+        ports:
+        - containerPort: 10000
