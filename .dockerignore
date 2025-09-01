@@ -1,4 +1,7 @@
 venv/
+.git
 .kubernetes/
 Dockerfile
 Dockerfile_k8s
+.dockerignore
+.gitignore
