@@ -29,3 +29,19 @@ spec:
             cpu: "50m"
         ports:
         - containerPort: 10000
+        readinessProbe:
+          httpGet:
+            path: /healthz
+            port: 10000
+          initialDelaySeconds: 5
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 3
+        livenessProbe:
+          httpGet:
+            path: /healthz
+            port: 10000
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 3
