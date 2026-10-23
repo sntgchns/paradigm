@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: paradigm
-        image: sntgchns/paradigm:k8s
+        image: 192.168.1.81:5001/sntgchns/paradigm:k8s
         imagePullPolicy: Never
         resources:
           requests:
